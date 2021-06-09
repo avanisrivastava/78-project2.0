@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+    </head>
+    <body>
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img  id="front_image"src="https://i.postimg.cc/MKdhy06Z/family.jpg" style="width: 30%;" id="family_member_image">
+            <h4 id="family_member_name">family members</h4>
+            <button onclick="update();">Next</button>
+        </center>
+
+        
+            <script>
+                var names=["family-book","dad",
+            "mom",
+            "oldest child",
+             "middle child",
+             "youngest child"]  
+            var pic_family=["cartoon-dad-005.jpg","mommm","sisss","meee"];
+
+            var i = 0;
+function update()
+{
+    i++;
+    var numbers_of_family_member_in_array = 4
+    if(i > numbers_of_family_member_in_array )
+    {
+        i = 0;
+    }
+    var updatedImage = pic_family[i];
+    var updatedName  = names[i];
+    document.getElementById("front_image").src = updatedImage;
+    document.getElementById("family_member_name").innerHTML = updatedName;
+}
+            </script>
+            
+            
+            
+            
+    </body>
+</html>
+
